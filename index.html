@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <form action="">
+      <p>Number 1: <input type="text" id="firstNumberField" /></p>
+      <p>Number 2: <input type="text" id="secondNumberField" /></p>
+
+      <input id="addButton" type="button" value="Add" onclick =
+      "onAddBtnClicked()"">
+      <input
+        id="subtractButton"
+        type="button"
+        value="Subtract"
+        onclick="onSubtractBtnClicked()"
+      />
+      <input id="multiplyButton" type="button" value="Multiply" onclick = "onDivideBtnClicked()"/>
+      <input id="divideButton" type="button" value="divide" onclick = "onMultiplyBtnClicked()"/>
+    </form>
+    <p>Answer: <span id="answer"></span></p>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
